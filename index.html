@@ -3,54 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>G L Bailey Plumbing Co | Covington, GA</title>
-  <meta name="description" content="Trusted plumbing services in Covington, GA. Call (770) 786-5992 for expert plumbing repairs and installation.">
+  <title>G L Bailey Plumbing Co | Covington, GA — Licensed Plumber</title>
+  <meta name="description" content="Licensed plumbing services in Covington, GA. 5.0-star rated. Call (770) 786-5992 for a free estimate.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#1a1a2e;line-height:1.6}
-    .hero{background:linear-gradient(135deg,#023047 0%,#219ebc 100%);color:#fff;padding:80px 20px;text-align:center}
-    .hero h1{font-size:2.5rem;margin-bottom:10px;font-weight:800}
-    .hero p{font-size:1.2rem;opacity:0.9;margin-bottom:30px}
-    .hero a.cta{display:inline-block;background:#ffb703;color:#023047;padding:16px 40px;border-radius:50px;text-decoration:none;font-size:1.1rem;font-weight:700;transition:transform 0.2s}
-    .hero a.cta:hover{transform:scale(1.05)}
-    .services{padding:60px 20px;max-width:900px;margin:0 auto}
-    .services h2{text-align:center;font-size:2rem;margin-bottom:40px;color:#023047}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
-    .card{background:#f8f9fa;border-radius:12px;padding:30px;text-align:center;border:1px solid #e9ecef}
-    .card .icon{font-size:2.5rem;margin-bottom:12px}
-    .card h3{font-size:1.2rem;margin-bottom:8px;color:#023047}
-    .card p{font-size:0.95rem;color:#555}
-    .contact{background:#023047;color:#fff;padding:60px 20px;text-align:center}
-    .contact h2{font-size:2rem;margin-bottom:20px}
-    .contact .phone{font-size:2rem;font-weight:800;margin:20px 0}
-    .contact .phone a{color:#ffb703;text-decoration:none}
-    .contact p{font-size:1.1rem;opacity:0.9}
-    footer{background:#012a3f;color:rgba(255,255,255,0.5);text-align:center;padding:20px;font-size:0.85rem}
-    footer a{color:rgba(255,255,255,0.7);text-decoration:none}
+    :root{--primary:#0c4a6e;--primary-dark:#0a3655;--accent:#0284c7;--accent-light:#38bdf8;--warm:#f59e0b;--light:#f8fafc;--dark:#0f172a;--gray:#64748b;--radius:16px}
+    body{font-family:'Inter',system-ui,sans-serif;color:#1e293b;line-height:1.6;overflow-x:hidden}
+    .hero{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 20px;background:var(--primary)}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(255,255,255,0.06) 0%,transparent 50%),radial-gradient(ellipse at 80% 20%,rgba(245,158,11,0.06) 0%,transparent 50%),linear-gradient(180deg,rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.35) 100%);z-index:1}
+    .hero::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");z-index:1}
+    .hero-content{position:relative;z-index:2;max-width:800px}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.15);padding:8px 20px;border-radius:50px;color:rgba(255,255,255,0.9);font-size:0.85rem;font-weight:600;margin-bottom:24px;letter-spacing:0.5px;text-transform:uppercase}
+    .hero-badge span{color:var(--warm)}
+    .hero h1{font-size:clamp(2.5rem,6vw,4.2rem);font-weight:900;color:#fff;line-height:1.08;margin-bottom:16px;letter-spacing:-1.5px}
+    .hero h1 em{font-style:normal;background:linear-gradient(135deg,var(--accent-light),var(--warm));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero .subtitle{font-size:clamp(1.05rem,2.5vw,1.3rem);color:rgba(255,255,255,0.75);margin-bottom:36px;font-weight:400;max-width:600px;margin-left:auto;margin-right:auto}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:18px 36px;border-radius:50px;font-size:1.05rem;font-weight:700;text-decoration:none;transition:all 0.3s ease}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.25)}
+    .btn-primary:hover{background:var(--accent-light);transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+    .btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.3)}
+    .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,0.1)}
+    .btn svg{width:20px;height:20px;fill:currentColor}
+    .trust{background:#fff;border-bottom:1px solid #e2e8f0}
+    .trust-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr)}
+    .trust-item{display:flex;align-items:center;justify-content:center;gap:12px;padding:24px 16px;border-right:1px solid #e2e8f0}
+    .trust-item:last-child{border-right:none}
+    .trust-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+    .trust-icon.gold{background:linear-gradient(135deg,#fef3c7,#fde68a);color:#92400e}
+    .trust-icon.green{background:linear-gradient(135deg,#d1fae5,#a7f3d0);color:#065f46}
+    .trust-icon.blue{background:linear-gradient(135deg,#dbeafe,#bfdbfe);color:#1e40af}
+    .trust-text{text-align:left}
+    .trust-text strong{display:block;font-size:0.95rem;font-weight:700;color:var(--dark)}
+    .trust-text span{font-size:0.8rem;color:var(--gray)}
+    .services{padding:80px 20px;background:var(--light)}
+    .section-header{text-align:center;max-width:600px;margin:0 auto 50px}
+    .section-label{display:inline-block;font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--accent);margin-bottom:12px}
+    .section-header h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:800;color:var(--dark);letter-spacing:-0.5px;margin-bottom:12px}
+    .section-header p{color:var(--gray);font-size:1.05rem}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:1000px;margin:0 auto}
+    .service-card{background:#fff;border-radius:var(--radius);padding:32px 28px;border:1px solid #e2e8f0;transition:all 0.3s ease;position:relative;overflow:hidden}
+    .service-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08);border-color:var(--accent)}
+    .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent-light));opacity:0;transition:opacity 0.3s}
+    .service-card:hover::before{opacity:1}
+    .service-icon{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#eff6ff,#dbeafe);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px}
+    .service-card h3{font-size:1.15rem;font-weight:700;color:var(--dark);margin-bottom:8px}
+    .service-card p{font-size:0.92rem;color:var(--gray);line-height:1.65}
+    .why{padding:80px 20px;background:#fff}
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:1000px;margin:0 auto;align-items:center}
+    .why-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .stat{background:var(--light);border-radius:var(--radius);padding:28px;text-align:center;border:1px solid #e2e8f0}
+    .stat .number{font-size:2.2rem;font-weight:900;color:var(--accent);letter-spacing:-1px}
+    .stat .label{font-size:0.85rem;color:var(--gray);font-weight:500;margin-top:4px}
+    .why-content h2{font-size:clamp(1.8rem,4vw,2.3rem);font-weight:800;color:var(--dark);margin-bottom:16px;letter-spacing:-0.5px}
+    .why-content p{color:var(--gray);font-size:1.02rem;margin-bottom:24px;line-height:1.7}
+    .check-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+    .check-list li{display:flex;align-items:center;gap:10px;font-size:0.95rem;font-weight:500;color:var(--dark)}
+    .check-list li::before{content:'\2713';display:flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#d1fae5,#a7f3d0);color:#065f46;font-size:0.75rem;font-weight:800;flex-shrink:0}
+    .cta-section{padding:80px 20px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);text-align:center;position:relative;overflow:hidden}
+    .cta-section::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+    .cta-content{position:relative;z-index:2;max-width:600px;margin:0 auto}
+    .cta-section h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:800;color:#fff;margin-bottom:12px}
+    .cta-section p{color:rgba(255,255,255,0.7);font-size:1.1rem}
+    .cta-phone{font-size:clamp(2rem,5vw,3rem);font-weight:900;margin:24px 0}
+    .cta-phone a{color:var(--warm);text-decoration:none}
+    .cta-address{color:rgba(255,255,255,0.5);font-size:0.95rem;margin-top:20px}
+    footer{background:var(--dark);color:rgba(255,255,255,0.4);text-align:center;padding:24px 20px;font-size:0.82rem}
+    footer a{color:rgba(255,255,255,0.6);text-decoration:none}
+    @media(max-width:768px){
+      .hero{min-height:80vh;padding:60px 20px}
+      .trust-inner{grid-template-columns:1fr}
+      .trust-item{border-right:none;border-bottom:1px solid #e2e8f0;padding:18px 16px}
+      .trust-item:last-child{border-bottom:none}
+      .why-grid{grid-template-columns:1fr;gap:40px}
+      .hero-actions{flex-direction:column;align-items:stretch;max-width:320px;margin:0 auto}
+      .btn{justify-content:center}
+    }
   </style>
 </head>
 <body>
   <section class="hero">
-    <h1>G L Bailey Plumbing Co</h1>
-    <p>Quality plumbing service you can count on — Covington, GA</p>
-    <a href="tel:7707865992" class="cta">Call (770) 786-5992</a>
-  </section>
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card"><div class="icon">🔧</div><h3>Residential Plumbing</h3><p>Complete plumbing services for homes — repairs, installations, and maintenance.</p></div>
-      <div class="card"><div class="icon">🏗️</div><h3>Commercial Plumbing</h3><p>Professional plumbing solutions for businesses and commercial properties.</p></div>
-      <div class="card"><div class="icon">🚿</div><h3>Fixture Installation</h3><p>Sinks, toilets, showers, bathtubs — expert installation and replacement.</p></div>
-      <div class="card"><div class="icon">🚰</div><h3>Pipe Repair</h3><p>Burst pipes, leaks, and corrosion — fast diagnosis and lasting repairs.</p></div>
-      <div class="card"><div class="icon">🏠</div><h3>Water Heaters</h3><p>Installation and repair of tank and tankless water heater systems.</p></div>
+    <div class="hero-content">
+      <div class="hero-badge"><span>★★★★★</span> 5.0-Star Rated on Google</div>
+      <h1>Covington's <em>Reliable</em> Plumbing Company</h1>
+      <p class="subtitle">Dependable plumbing service with a perfect 5-star reputation — because your home deserves the best.</p>
+      <div class="hero-actions">
+        <a href="tel:7707865992" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          (770) 786-5992
+        </a>
+        <a href="#services" class="btn btn-outline">View Our Services</a>
+      </div>
     </div>
   </section>
-  <section class="contact">
-    <h2>Request a Free Estimate</h2>
-    <p>Serving Covington, GA and Newton County</p>
-    <div class="phone"><a href="tel:7707865992">(770) 786-5992</a></div>
-    <p>8300 Hazelbrand Rd NE, Covington, GA 30014</p>
+  <section class="trust">
+    <div class="trust-inner">
+      <div class="trust-item"><div class="trust-icon gold">⭐</div><div class="trust-text"><strong>5-Star Rated</strong><span>Highly rated on Google</span></div></div>
+      <div class="trust-item"><div class="trust-icon green">✓</div><div class="trust-text"><strong>Licensed &amp; Insured</strong><span>Fully certified professionals</span></div></div>
+      <div class="trust-item"><div class="trust-icon blue">📋</div><div class="trust-text"><strong>Free Estimates</strong><span>No obligation quotes</span></div></div>
+    </div>
   </section>
-  <footer><p>&copy; 2026 G L Bailey Plumbing Co. All rights reserved. | Website by <a href="#">WebReach</a></p></footer>
+  <section class="services" id="services">
+    <div class="section-header">
+      <div class="section-label">What We Do</div>
+      <h2>Professional Plumbing Services</h2>
+      <p>From routine repairs to complex installations — we handle it all with precision and care.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Residential Plumbing</h3>
+        <p>Complete plumbing services for homes — repairs, installations, and preventive maintenance.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏗️</div>
+        <h3>Commercial Plumbing</h3>
+        <p>Professional plumbing solutions for businesses, offices, and commercial properties.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🚿</div>
+        <h3>Fixture Installation</h3>
+        <p>Sinks, toilets, showers, bathtubs — expert installation and replacement by skilled technicians.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Pipe Repair</h3>
+        <p>Burst pipes, leaks, and corrosion — fast diagnosis and permanent, lasting repairs.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔥</div>
+        <h3>Water Heaters</h3>
+        <p>Installation and repair of all water heater types — tank, tankless, and hybrid systems.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🚨</div>
+        <h3>Emergency Calls</h3>
+        <p>Urgent plumbing problem? We provide fast emergency response when you need it most.</p>
+      </div>
+    </div>
+  </section>
+  <section class="why">
+    <div class="why-grid">
+      <div class="why-stats">
+        <div class="stat"><div class="number">5.0</div><div class="label">Google Rating</div></div>
+        <div class="stat"><div class="number">24/7</div><div class="label">Availability</div></div>
+        <div class="stat"><div class="number">100%</div><div class="label">Satisfaction</div></div>
+        <div class="stat"><div class="number">Free</div><div class="label">Estimates</div></div>
+      </div>
+      <div class="why-content">
+        <h2>Why Trust G L Bailey Plumbing</h2>
+        <p>We've built our reputation one job at a time — delivering quality plumbing work to Covington families with honesty and professionalism.</p>
+        <ul class="check-list">
+          <li>Fair, upfront pricing on every job</li>
+          <li>Licensed and fully insured team</li>
+          <li>Residential and commercial experience</li>
+          <li>Clean, respectful work on your property</li>
+          <li>Serving Covington and surrounding areas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Ready to Fix Your Plumbing?</h2>
+      <p>Call now for a free, no-obligation estimate</p>
+      <div class="cta-phone"><a href="tel:7707865992">(770) 786-5992</a></div>
+      <a href="tel:7707865992" class="btn btn-primary" style="margin-top:8px">
+        <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        Call Now — Free Estimate
+      </a>
+      <p class="cta-address">📍 8300 Hazelbrand Rd NE, Covington, GA 30014</p>
+    </div>
+  </section>
+  <footer><p>&copy; 2026 G L Bailey Plumbing Co · Covington, GA · All rights reserved · Website by <a href="#">WebReach</a></p></footer>
 </body>
 </html>
